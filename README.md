@@ -1,4 +1,4 @@
-# WP Content Dumper v1.1  
+# WP Content Upload Dumper v1.1  
 
 🚀 **WordPress Uploads Bulk Downloader** support with:  
 - **Mass download** all files from `/wp-content/uploads/`
