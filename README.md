@@ -47,7 +47,7 @@ python3 wpc.py -st "https://target.com/wp-content/uploads/2025/01/file.pdf"
 ### Custom Filename (single target)
 Download 1 file and save it with a custom name:
 ```bash
-python3 wpc.py "https://target.com/wp-content/uploads/2025/01/file.pdf" -st -name report
+python3 wpc.py "https://target.com/wp-content/uploads/2025/01/file.pdf" -st -name report.pdf
 ```
 
 ### Set Threads
