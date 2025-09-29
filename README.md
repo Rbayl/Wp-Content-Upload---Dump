@@ -23,8 +23,8 @@
 ## 📦 Installation
 Clone repo:
 ```bash
-git clone https://github.com/Rbayl/shadow-downloader.git
-cd shadow-downloader
+https://github.com/Rbayl/wpcu-dump.git
+cd wpcu-dump
 pip install -r requirements.txt
 ```
 
