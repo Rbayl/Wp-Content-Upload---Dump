@@ -33,38 +33,38 @@ pip install -r requirements.txt
 ### Mass Download
 Download the entire contents of `wp-content/uploads/` (auto-scan):
 ```bash
-python3 wpc.py "https://target.com/wp-content/uploads/"
+python3 wpcu.py "https://target.com/wp-content/uploads/"
 ```
 
 ### Single Target
 Download 1 Specific File
 ```bash
-python3 wpc.py -st "https://target.com/wp-content/uploads/2025/01/file.pdf"
+python3 wpcu.py -st "https://target.com/wp-content/uploads/2025/01/file.pdf"
 ```
 
 ### Custom Filename (single target)
 Download 1 file and save it with a custom name:
 ```bash
-python3 wpc.py "https://target.com/wp-content/uploads/2025/01/file.pdf" -st -name report.pdf
+python3 wpcu.py "https://target.com/wp-content/uploads/2025/01/file.pdf" -st -name report.pdf
 ```
 
 ### Set Threads
 Change the number of threads (default 10):
 ```bash
-python3 wpc.py "https://target.com/wp-content/uploads/" -t 20
+python3 wpcu.py "https://target.com/wp-content/uploads/" -t 20
 ```
 
 ### Set Timeout
 Change the request timeout (seconds, default 30):
 ```bash
-python3 wpc.py "https://target.com/wp-content/uploads/" --timeout 60
+python3 wpcu.py "https://target.com/wp-content/uploads/" --timeout 60
 ```
 
 ### Mass target display
 ```bash
 ┌─────────────────────────────────────────────────────────┐
 │               WP Content Upload Download                │
-│                     by 0xk4sa                           │
+│                       by Rbayl                          │
 └─────────────────────────────────────────────────────────┘
 🔗 Target    : https://target.com/wp-content/uploads/
 📁 Output    : downloads_target.com_1738213423
@@ -104,7 +104,7 @@ python3 wpc.py "https://target.com/wp-content/uploads/" --timeout 60
 ```bash
 ┌─────────────────────────────────────────────────────────┐
 │               WP Content Upload Download                │
-│                     by 0xk4sa                           │
+│                       by Rbayl                          │
 └─────────────────────────────────────────────────────────┘
 🔗 Target    : https://target.com/wp-content/uploads/example.jpeg
 📁 Output    : downloads_target.com_1738213423
