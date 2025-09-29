@@ -3,7 +3,6 @@
 🚀 **WordPress Uploads Bulk Downloader** support with:  
 - **Mass download** all files from `/wp-content/uploads/`
 - **Single target mode** (download only one file)
-- **Auto resume** if the connection is lost
 - **Threads** for parallel downloads
 - **Progress bar (tqdm)** for a neater layout
 - **Error reporting** (failed downloads display the full URL in the summary)
@@ -14,7 +13,6 @@
 - 🔍 Auto scan folder structure (`/year/month/`)
 - 📥 Bulk download all files (images, documents, archives, videos, etc.)
 - 🎯 Single target mode with custom filenames
-- 💾 Automatic session resume (`.wpc_resume.json`)
 - 📊 Complete download summary (total files, success, failure, data size)
 - ⚠️ List of failed links automatically displayed in the summary
 
@@ -60,12 +58,6 @@ python3 wpc.py "https://target.com/wp-content/uploads/" -t 20
 Change the request timeout (seconds, default 30):
 ```bash
 python3 wpc.py "https://target.com/wp-content/uploads/" --timeout 60
-```
-
-### Resume Session
-Resume the previous download session (use the resume file in the output folder):
-```bash
-python3 wpc.py "https://target.com/wp-content/uploads/" --resume
 ```
 
 ### Mass target display
@@ -132,13 +124,12 @@ python3 wpc.py "https://target.com/wp-content/uploads/" --resume
 ────────────────────────────────────────────────────────────
 📊 DOWNLOAD SUMMARY
 ────────────────────────────────────────────────────────────
-├─ Target: https://target.com/wp-content/uploads/
+├─ Target: https://target.com/wp-content/uploads/example.jpeg
 ├─ Output: downloads_target.com_1738213423
-├─ Total files: 4797
-├─ ✅ Successful: 4794
-├─ ❌ Failed: 3
-├─ 💾 Total data: 763.0 MB
-└─ 💾 Resume data: downloads_target.com_1738213423/.wpc_resume.json
+├─ Total files: 275
+├─ ✅ Successful: 275
+├─ ❌ Failed: 0
+└─ 💾 Total data: 17.6 MB
 
 ⚠️  Failed downloads (1 total):
    └─ example.jpeg → https://target.com/wp-content/uploads/example.jpeg
