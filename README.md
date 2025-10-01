@@ -21,7 +21,7 @@
 ## 📦 Installation
 Clone repo:
 ```bash
-https://github.com/Rbayl/wpcu-dump.git
+git clone https://github.com/Rbayl/wpcu-dump.git
 cd wpcu-dump
 pip install -r requirements.txt
 ```
